@@ -7,7 +7,7 @@ namespace sharpKataStringCalc
 ///     let h = Library.hello 1
 ///     printfn "%d" h
 ///
-module Library = 
+module Calculator = 
   
   /// Returns 42
   ///
