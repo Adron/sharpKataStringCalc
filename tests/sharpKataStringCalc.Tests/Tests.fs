@@ -1,10 +1,13 @@
 module sharpKataStringCalc.Tests
 
+open System
 open sharpKataStringCalc
 open NUnit.Framework
 
-[<Test>]
-let ``hello returns 42`` () =
-  let result = Calculator.hello 42
-  printfn "%i" result
-  Assert.AreEqual(42,result)
+[<TestFixture>]
+type CalculatorTests() =
+  [<Test>]
+  member x.add_empty_string() =
+    let calculator = Calculator()
+    let result = calculator.Add ""
+    Assert.That(result, Is.EqualTo 0)
