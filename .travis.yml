@@ -4,3 +4,6 @@ sudo: false  # use the new container-based Travis infrastructure
 
 script: 
   - ./build.sh All
+
+notifications:
+  slack: thrashingcode:APaL8WuJBKSYjkZYCeOLAAqq
